@@ -14,9 +14,12 @@ This repository contains R code that performs Maximum Likelihood Estimation (MLE
 
 
 ### stan_model.R
-This is R script containing the R stan code. It uses the stan library to fit the model based on the stan file ("double_binomial.stan"). We create the data_list consisting of the number of observations, N; the observed data, y; and the number of trials, m. The stan function runs the model that has been specified in the stan file ("double_binomial.stan"). We set the total number of iterations, iter to 110,000 with 1000 iterations that will be discarded as warmup and a thinning interval of 10 to minimize autocorrelation. The number of chains used for the sampling was set to 2.
+This is R script containing the R stan code. It uses the stan library to fit the model based on the stan file ("double_binomial.stan"). We create the data_list consisting of the number of observations, N; the observed data, y (proportion between 0 and 1); and the number of trials, m (positive integer). The stan function runs the model that has been specified in the stan file ("double_binomial.stan"). We set the total number of iterations, iter to 110,000 with 1000 iterations that will be discarded as warmup and a thinning interval of 10 to minimize autocorrelation. The number of chains used for the sampling was set to 2.
+
+
+
 
 
 ### double_binomial.stan
-This file implements the double binomial model in Stan for Bayesian inference. The model aims to estimate the two parameters: mu, the mean parameter, and phi, the dispersion parameter.The model is designed for a dataset with N:number of observations, m: number of trials (a positive integer), and y: array of observations where each element is a proportion between 0 and 1.
+This file implements the double binomial model in Stan for Bayesian inference. The model aims to estimate the two parameters: mu, the mean parameter, and phi, the dispersion parameter.The model is designed for a dataset with N:number of observations, m: number of trials (positive integer), and y: array of observations where each element is a proportion between 0 and 1. Adjustments are made to observations that are exactly 0 or 1 to avoid runing into numerical issues in the computation of log(0).
 
