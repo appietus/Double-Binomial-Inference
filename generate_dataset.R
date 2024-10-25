@@ -2,7 +2,7 @@ rm(list = ls())
 
 # Set fixed parameters
 mu <- 0.35
-phi <- 0.65
+phi <- 0.07
 
 # Choose a single value of m
 m <- 100  # You can set this to any other single value, e.g., m = 50 or m = 10
