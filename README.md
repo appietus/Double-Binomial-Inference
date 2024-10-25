@@ -19,7 +19,7 @@ This is R script containing the R stan code. It uses the stan library to fit the
 
 
 ### Gibbs_sampler.R
-This R scripts performs Bayesian estimation of the two parameters:mu, the mean parameter, and phi, the dispersion parameter using the Gibbs sampling approach for the Double Binomial model. Iteratively samples from the conditional distributions of mu and phi. mu is updated using the Beta distribution and the phi is updated using the Gamma distribution. Adjusts observations of 0 and 1 to avoid computational errors of log (0). The code runs for 110,000 iterations and a burn-in period of 10,000. After running the code, mu and phi will contain the posterior samples after burn-in and thinning, for the mean parameter and the dispersion parameter respectively . 
+This R scripts performs Bayesian estimation of the two parameters:mu, the mean parameter, and phi, the dispersion parameter using the Gibbs sampling approach for the Double Binomial model. The data, y, is generated from the R script (generate_dataset.R). Observations of 0 and 1 are adjusted to avoid computational issues of log(0). Iteratively samples from the conditional distributions of mu and phi. mu is updated using the Beta distribution and the phi is updated using the Gamma distribution. The code runs for 110,000 iterations and a burn-in period of 10,000. After running the code, mu and phi will contain the posterior samples after burn-in and thinning, for the mean parameter and the dispersion parameter respectively . 
 
 
 
