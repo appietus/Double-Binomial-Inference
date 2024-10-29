@@ -1,5 +1,5 @@
 ## Inference on the Double Binomial Distribution
-This repository contains all the code, data and R scripts for the *Communications in Statistics: Theory and Methods* manuscript titled "Inference on the Double Binomial Distribution" by John Appiah Kubi, Dale Bowman and E.O George. 
+This repository contains all the code, data and R scripts for the *Communications in Statistics: Theory and Methods* manuscript titled "Inference on the Double Binomial Distribution" by John Appiah Kubi, Dale Bowman and E. Olusegun George. 
 The following R scripts are included in this repository for more specific details on implementing the code for the respective sections.
 
 
