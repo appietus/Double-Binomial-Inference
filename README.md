@@ -7,7 +7,7 @@ The following R scripts are included in this repository for more specific detail
 
 
 ### generate_dataset.R
-This contains the R script for generating a dataset based on the double binomial distribution for a single value of `m`, using user-defined parameters for the mean (`mu`) and the dispersion parameter (`phi`). 
+This contains the R script for generating a dataset (random samples) based on the double binomial distribution for a single value of `m`, using user-defined parameters for the mean (`mu`) and the dispersion parameter (`phi`). Given (`mu`), (`phi`) and (`m`), the code returns generated samples.
 
 For the parameter initialization: 
 - `mu`: Represents the mean (between 0 and 1), set to 0.35 but can be adjusted as desired; 
