@@ -1,4 +1,4 @@
-## R Scripts
+## Inference on the Double Binomial Distribution
 The following R scripts are included in this repository 
 
 
