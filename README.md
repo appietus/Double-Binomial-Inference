@@ -20,6 +20,10 @@ The `generate_data()` function generates a dataset of `N = 1000` values based on
 
 
 ### maximum_likelihood.R
+This contains the R code that performs Maximum Likelihood Estimation (MLE) on a dataset generated from a Double Binomial distribution using the `maxLik` package. The `maxLik` package is a set of functions and tools used to perform Maximum Likelihood (ML) estimation. The goal is to estimate the parameters `mu` (mean) and `phi` (dispersion) by maximizing the likelihood function. Given a log-likelihood function and a vector of parameters' starting values, it returns an object of class `maxLik` based on optimization methods.
+
+This R (`R Core Team, 2023`) script is for the computation of the MLEs for the Double Binomial distribution. The dataset `y` represents the data for the MLE process. You can use the dataset generated from the previous R script (`generate_dataset.R`) as your dataset. For instance, the dataset `y` is generated using the double binomial simulation for a single value of `m` (e.g., `m = 100`). This dataset serves as the input for the MLE process.
+
 This contains the R code that performs Maximum Likelihood Estimation (MLE) on a dataset generated from a Double Binomial distribution using the maxLik package. The maxLik-package is a set of functions and tools used to perform Maximum Likelihood(ML) estimation. The goal is to estimate the parameters mu (mean) and phi (dispersion) by maximizing the likelihood function. Given a log-likelihood function and a vector of parameters’starting values, it returns an object of class ’maxLik’ based on optimization methods. This R(R Core Team, 2023) script is for the computation of the MLEs for the Double Binomial distribution. The dataset y represents the data for the MLE process. You can use the dataset generated from the previous R script (generate_dataset.R) as your dataset. For instance, the dataset y is generated using the double binomial simulation for a single value of m (e.g., m = 100). This dataset serves as the input for the MLE process.
 
 
