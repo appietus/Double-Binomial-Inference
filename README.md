@@ -44,5 +44,8 @@ The script iteratively samples from the conditional distributions of `mu` and `p
 
 
 ### double_binomial.stan
-This file implements the double binomial model in Stan for Bayesian inference. The model aims to estimate the two parameters: mu, the mean parameter, and phi, the dispersion parameter.The model is designed for a dataset with N:number of observations, m: number of trials (positive integer), and y: array of observations where each element is a proportion between 0 and 1. Adjustments are made to observations that are exactly 0 and 1 to avoid running into numerical issues in the computation of log(0).
+This file implements the double binomial model in Stan for Bayesian inference. The model aims to estimate the two parameters: `mu`, the mean parameter, and `phi`, the dispersion parameter. 
+
+The model is designed for a dataset with `N`: number of observations, `m`: number of trials (positive integer), and `y`: array of observations where each element is a proportion between 0 and 1. Adjustments are made to observations that are exactly 0 and 1 to avoid running into numerical issues in the computation of `log(0)`.
+
 
