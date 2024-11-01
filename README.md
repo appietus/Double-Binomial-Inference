@@ -72,3 +72,12 @@ This file implements the double binomial model in Stan for Bayesian inference. T
 The model is designed for a dataset with `N`: number of observations, `m`: number of trials (positive integer), and `y`: array of observations where each element is a proportion between 0 and 1. Adjustments are made to observations that are exactly 0 and 1 to avoid running into numerical issues in the computation of `log(0)`.
 
 
+
+
+
+### EG_final.csv
+The data for our analysis was obtained from the developmental toxicity study of ethylene glycol (EG) on the Swiss CD-1 mice conducted through the National Toxicology
+Program (NTP). The data are available at http://ntp.niehs.nih.gov. The mice were randomized to either control or one of the three dose levels (750, 1500 or 3000
+mg/kg) of the ethylene glycol. For easy and better computational purposes, each dose is divided by the highest dose to scale it down. Outcomes measured included
+fetal weight, sex, dead or alive and various forms of malformations. The outcomes of interest includes the number of clusters (litters) in each dose group, the number of fetal malformations in each dose group.
+
